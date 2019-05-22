@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     current_cart << @item.id
   end
   
-  def current_cart
+  def cart
     session[:cart] ||= []
   end
   
